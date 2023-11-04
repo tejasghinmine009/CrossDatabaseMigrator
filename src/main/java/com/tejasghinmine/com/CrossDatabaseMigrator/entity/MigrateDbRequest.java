@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class MigrateDb {
+public class MigrateDbRequest {
     private String extractTable;
     private String insertTable;
     private String queryTable;
