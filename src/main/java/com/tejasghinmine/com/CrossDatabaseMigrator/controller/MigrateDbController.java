@@ -19,7 +19,7 @@ public class MigrateDbController {
                           @Validated @RequestParam("extract-table") MultipartFile extractTable,
                           @Validated @RequestParam("insert-table") MultipartFile insertTable,
                           @RequestParam("query-table") MultipartFile queryTable){
-        String ans =  migrateDbService.migrateDb(migrateDbRequest);
+        String ans =  migrateDbService.migrateDb(migrateDbRequest,extractTable,insertTable,queryTable);
     }
 
 }
